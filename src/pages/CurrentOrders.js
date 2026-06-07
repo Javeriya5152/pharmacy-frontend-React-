@@ -32,7 +32,8 @@ function OrderCard({ category, onConfirmed }) {
     setLoading(false);
   };
 
-  useEffect(() => { fetchOrder(); }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => { fetchOrder(); }, []);
 
   const updateQty = async (itemId, qty) => {
     if (qty < 1) return;
