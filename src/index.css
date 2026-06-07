@@ -1,0 +1,118 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+.navbar {
+  background: #1a73e8;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 { font-size: 1.2rem; }
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover { text-decoration: underline; }
+
+.container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+
+.page-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1a73e8;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-info h3 { font-size: 1rem; font-weight: 600; }
+.card-info p { font-size: 0.85rem; color: #666; margin-top: 3px; }
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-primary { background: #1a73e8; color: white; }
+.btn-primary:hover { background: #1558b0; }
+.btn-danger { background: #e53935; color: white; }
+.btn-danger:hover { background: #b71c1c; }
+.btn-success { background: #43a047; color: white; }
+.btn-success:hover { background: #2e7d32; }
+.btn-outline {
+  background: white;
+  border: 1.5px solid #1a73e8;
+  color: #1a73e8;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-control button {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid #1a73e8;
+  background: white;
+  color: #1a73e8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.qty-control span { font-weight: 600; min-width: 24px; text-align: center; }
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.badge-draft { background: #fff3e0; color: #e65100; }
+.badge-confirmed { background: #e8f5e9; color: #2e7d32; }
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+}
+
+.search-bar:focus { border-color: #1a73e8; }
