@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:8080/api';
+const API = 'https://pharmacy-order-backend.onrender.com/api';
 
 const CATEGORIES = ['GENERIC', 'ETHICAL', 'GENERAL'];
 const CATEGORY_LABELS = {
